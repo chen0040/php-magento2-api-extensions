@@ -10,8 +10,6 @@ http_basic:
     repo_magento_com:
         username: [magento_public_key]
         password: [magento_private_key]
-github_oauth:
-    github_com: "[github_oauth]"
 magento:
     db_name: "magento"
     admin_firstname: "Admin"
