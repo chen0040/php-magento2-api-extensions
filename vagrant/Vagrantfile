@@ -46,6 +46,7 @@ Vagrant.configure(2) do |config|
   # provisioning magento installation
   # note that the following line is for development only, for security in production env, u should not set permission to 777
   config.vm.provision "shell", inline: "sudo chmod -R 777 /var/www/html"
+  config.vm.provision "shell", inline: "rm -f /var/www/html/index.html"
   config.vm.provision "shell", inline: "curl -sS https://getcomposer.org/installer | php"
   config.vm.provision "shell", inline: "mv composer.phar /usr/local/bin/composer"
   config.vm.provision "shell", inline: "composer clearcache"

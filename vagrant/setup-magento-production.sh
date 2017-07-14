@@ -50,7 +50,7 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 composer clearcache
 [ -d $root_dir/.composer ] || mkdir $root_dir/.composer
-echo '{"http-basic": {"repo.magento.com": {"username": "[magento_public_key]","password": "[magento_private_key]"}}, "github-oauth": {"github.com": "[github_oauth]"}}' > $root_dir/.composer/auth.json
+echo '{"http-basic": {"repo.magento.com": {"username": "[magento_public_key]","password": "[magento_private_key]"}}}' > $root_dir/.composer/auth.json
 
 echo 'create magento project'
 composer create-project --ignore-platform-reqs --repository-url=https://repo.magento.com/ magento/project-community-edition /var/www/html/

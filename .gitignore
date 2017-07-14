@@ -1,3 +1,5 @@
 /Vagrantfile
 /Vagrantfile.config.yml
 /apache2.conf
+
+.vagrant/
