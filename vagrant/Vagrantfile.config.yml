@@ -1,7 +1,7 @@
 ip: 192.168.10.10
 synced_folder:
-    host_path: "/home/vagrant/magento-modules/"
-    guest_path: "../magento-modules/"
+    host_path: "../magento-modules/"
+    guest_path: "/home/vagrant/magento-modules/"
 mysql:
     host: "127.0.0.1"
     username: root
