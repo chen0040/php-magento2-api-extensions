@@ -2,6 +2,14 @@
 
 Some useful Magento2 API extensions
 
+# Features
+
+The following web api is supported (where :param refers to the value of the parameter passed into the method)
+
+GET /rest/V1/logout/customer/:customerId
+
+
+
 # Usage
 
 
