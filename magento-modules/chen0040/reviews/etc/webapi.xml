@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/chen0040/products/:sku/reviews" method="GET">
+        <service class="chen0040\reviews\Api\ReviewManagerInterface" method="findReviewByProductSku"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+	<route url="/V1/chen0040/products/:sku/ratingSummary" method="GET">
+		<service class="chen0040\reviews\Api\ReviewManagerInterface" method="getRatingSummary" />
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route url="/V1/chen0040/products/:sku/reviewsCount" method="GET">
+		<service class="chen0040\reviews\Api\ReviewManagerInterface" method="getReviewsCount" />
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+</routes>

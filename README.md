@@ -6,7 +6,11 @@ Some useful Magento2 API extensions
 
 The following web api is supported (where :param refers to the value of the parameter passed into the method)
 
-GET /rest/V1/logout/customer/:customerId
+GET /rest/V1/chen0040/customers/:customerId/logout
+
+GET /rest/V1/chen0040/products/:sku/ratingSummary
+
+GET /rest/V1/chen0040/products/:sku/reviewsCount
 
 
 
