@@ -37,7 +37,7 @@ interface ReviewManagerInterface
      * Return false if review was not loaded or review is not approved.
      *
      * @param int $reviewId
-     * @return array test \Magento\Review\Model\Review
+     * @return array
 	 * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
 	public function getReview($reviewId);

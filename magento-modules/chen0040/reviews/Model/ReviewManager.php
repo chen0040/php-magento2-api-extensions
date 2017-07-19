@@ -85,7 +85,6 @@ class ReviewManager implements ReviewManagerInterface
         ) {
             throw new NoSuchEntityException(__('Requested review doesn\'t exist'));
         }
-		var_dump($review->getData();
         return $review->getData();
     }
 
@@ -99,8 +98,8 @@ class ReviewManager implements ReviewManagerInterface
 		
 		$productId = $this->_resourceModel->getIdBySku($sku);
 		$reviewcollection = $this->_reviewFactory->create()->getResourceCollection()->addStoreFilter($this->_storeManager->getStore()->getId())
-		//->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
-		->addFieldToFilter('entity_id', Mage_Review_Model_Review::ENTITY_PRODUCT)
+		->addStatusFilter(\Magento\Review\Model\Review::STATUS_APPROVED)
+		->addFieldToFilter('entity_id', \Magento\Catalog\Model\Product::ENTITY)
 		->addFieldToFilter('entity_pk_value', $productId)
 		->setDateOrder();
 		var_dump($reviewcollection->getItems());
