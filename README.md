@@ -14,6 +14,8 @@ GET /rest/V1/chen0040/products/:sku/reviewsCount
 
 GET /rest/V1/chen0040/reviews/:reviewId
 
+GET /rest/V1/chen0040/products/:sku/reviews
+
 
 
 # Usage

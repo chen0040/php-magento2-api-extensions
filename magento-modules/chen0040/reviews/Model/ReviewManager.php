@@ -99,7 +99,6 @@ class ReviewManager implements ReviewManagerInterface
 		$productId = $this->_resourceModel->getIdBySku($sku);
 		$reviewcollection = $this->_reviewFactory->create()->getResourceCollection()->addStoreFilter($this->_storeManager->getStore()->getId())
 		->addStatusFilter(\Magento\Review\Model\Review::STATUS_APPROVED)
-		->addFieldToFilter('entity_id', \Magento\Catalog\Model\Product::ENTITY)
 		->addFieldToFilter('entity_pk_value', $productId)
 		->setDateOrder();
 		var_dump($reviewcollection->getItems());
