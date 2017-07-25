@@ -1,5 +1,6 @@
 <?php
-
+namespace chen0040\reviews\Model;
+use chen0040\reviews\Model\ReviewModelInterface;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +12,7 @@
  *
  * @author chen0
  */
-class ReviewModel implements chen0040\reviews\Model\ReviewModelInterface {
+class ReviewModel implements ReviewModelInterface {
     //put your code here
     
     private $review_id;

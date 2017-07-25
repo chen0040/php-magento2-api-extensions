@@ -1,5 +1,5 @@
 <?php
-namespace chen0040\reviews\Api;
+namespace chen0040\reviews\Model;
  
 interface ReviewModelInterface
 {
