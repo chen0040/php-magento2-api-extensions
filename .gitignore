@@ -3,3 +3,4 @@
 /apache2.conf
 
 .vagrant/
+/magento-modules/nbproject/private/

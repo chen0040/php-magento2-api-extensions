@@ -16,7 +16,7 @@ interface ReviewManagerInterface
 	 * Returns the rating summary of a product 
 	 *
 	 * @api
-	 * @param string @sku Sku of the product
+	 * @param string @sku SKU of the product
 	 * @return int Rating summary of the product 
 	 * @throws \Magento\Framework\Exception\NoSuchEntityException
 	 */
@@ -26,7 +26,7 @@ interface ReviewManagerInterface
 	 * Returns the review count of a product 
 	 *
 	 * @api
-	 * @param string @sku Sku of the product
+	 * @param string @sku SKU of the product
 	 * @return int Review count of the product 
 	 * @throws \Magento\Framework\Exception\NoSuchEntityException
 	 */
@@ -37,7 +37,7 @@ interface ReviewManagerInterface
      * Return false if review was not loaded or review is not approved.
      *
      * @param int $reviewId
-     * @return array
+     * @return \chen0040\reviews\Api\ReviewModelInterface
 	 * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
 	public function getReview($reviewId);

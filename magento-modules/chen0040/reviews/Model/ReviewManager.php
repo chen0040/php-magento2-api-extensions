@@ -85,7 +85,8 @@ class ReviewManager implements ReviewManagerInterface
         ) {
             throw new NoSuchEntityException(__('Requested review doesn\'t exist'));
         }
-        return $review->getData();
+        return new \chen0040\reviews\Model\ReviewModel($review);
+        
     }
 
     /**
@@ -101,7 +102,7 @@ class ReviewManager implements ReviewManagerInterface
 		->addStatusFilter(\Magento\Review\Model\Review::STATUS_APPROVED)
 		->addFieldToFilter('entity_pk_value', $productId)
 		->setDateOrder();
-		var_dump($reviewcollection->getItems());
+		$reviews = $reviewcollection->getItems();
 		return '';
     }
 }
