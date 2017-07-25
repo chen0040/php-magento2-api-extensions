@@ -103,6 +103,10 @@ class ReviewManager implements ReviewManagerInterface
 		->addFieldToFilter('entity_pk_value', $productId)
 		->setDateOrder();
 		$reviews = $reviewcollection->getItems();
-		return '';
+                $result = array();
+                foreach($reviews as $review) {
+                    array_push($result, $review);
+                }
+		return $result;
     }
 }

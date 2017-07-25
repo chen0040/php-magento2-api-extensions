@@ -8,7 +8,7 @@ interface ReviewManagerInterface
      *
      * @api
      * @param string $sku Sku of the product.
-     * @return string Greeting message with users name.
+     * @return \chen0040\reviews\Model\ReviewModelInterface[] list of reviews.
      */
     public function findReviewByProductSku($sku);
 	
@@ -37,7 +37,7 @@ interface ReviewManagerInterface
      * Return false if review was not loaded or review is not approved.
      *
      * @param int $reviewId
-     * @return \chen0040\reviews\Api\ReviewModelInterface
+     * @return \chen0040\reviews\Model\ReviewModelInterface
 	 * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
 	public function getReview($reviewId);
